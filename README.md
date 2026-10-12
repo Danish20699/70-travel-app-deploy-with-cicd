@@ -121,22 +121,19 @@ During this lab, four critical production-like issues were identified and resolv
 
 ## 📸 Pipeline Execution & Verification Screenshots
 
-### 1. Lab Tracker Initial State
-![Lab Tracker Initial State](assets/01-lab-tracker-task70.png)
-
-### 2. WSL2 Sleep & Connection Troubleshooting
+### 1. WSL2 Sleep & Connection Troubleshooting
 ![WSL Idle Connection Issue](assets/02-wsl-idle-connection-refused-issue.png)
 
-### 3. Jenkins Build #1 — Staging Success, Production SSH Timeout
+### 2. Jenkins Build #1 — Staging Success, Production SSH Timeout
 ![Jenkins Build 1 Console Log](assets/03-jenkins-build-1-prod-ssh-timeout.png)
 
-### 4. Jenkins Build #2 — Aborted Build
+### 3. Jenkins Build #2 — Aborted Build
 ![Jenkins Build 2 Aborted](assets/04-jenkins-build-2-aborted.png)
 
-### 5. Jenkins Build #3 — 100% SUCCESS Across All Stages!
+### 4. Jenkins Build #3 — 100% SUCCESS Across All Stages!
 ![Jenkins Build 3 Success](assets/05-jenkins-build-3-pipeline-success.png)
 
-### 6. Live Staging Web Application Verification
+### 5. Live Staging Web Application Verification
 ![Live Staging Verification](assets/06-staging-live-browser-verification.png)
 
 ---
@@ -144,7 +141,7 @@ During this lab, four critical production-like issues were identified and resolv
 ## 🌐 Live Verification Matrix
 
 | Environment | Service | URL | Response | Status |
-|:---|:---|:---|:---:|:---:|
+| :--- | :--- | :--- | :--- | :---: |
 | **Staging** | Web Application | `http://192.168.56.101:8085` | `HTTP/1.1 200 OK` | 🟢 **LIVE** |
 | **Staging** | Adminer Console | `http://192.168.56.101:8086` | `HTTP/1.1 200 OK` | 🟢 **LIVE** |
 | **Production** | Web Application | `http://192.168.56.102:8085` | `HTTP/1.1 200 OK` | 🟢 **LIVE** |
@@ -163,7 +160,6 @@ During this lab, four critical production-like issues were identified and resolv
 │   └── workflows/
 │       └── ci.yml                      # GitHub Actions CI pipeline
 ├── assets/                             # Execution screenshots & pipeline proofs
-│   ├── 01-lab-tracker-task70.png
 │   ├── 02-wsl-idle-connection-refused-issue.png
 │   ├── 03-jenkins-build-1-prod-ssh-timeout.png
 │   ├── 04-jenkins-build-2-aborted.png

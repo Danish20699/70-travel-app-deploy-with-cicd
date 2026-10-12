@@ -293,37 +293,31 @@ During the execution of this lab, several non-trivial enterprise infrastructure 
 
 ## 📸 Step-by-Step Execution Screenshots
 
-### 1. Lab Tracker Starting Point
-*LabTracker Google Sheet tracking Lab 70 before starting the automated CI/CD pipeline.*
-![Lab Tracker Starting State](assets/01-lab-tracker-task70.png)
-
----
-
-### 2. WSL2 Sleep & Connection Dropped Issue
+### 1. WSL2 Sleep & Connection Dropped Issue
 *Microsoft Edge displaying connection refused when WSL2 entered idle sleep state.*
 ![WSL Idle Connection Issue](assets/02-wsl-idle-connection-refused-issue.png)
 
 ---
 
-### 3. Jenkins Build #1 — Staging Success, Production SSH Timeout
+### 2. Jenkins Build #1 — Staging Success, Production SSH Timeout
 *Build #1 successfully deployed to Staging and passed approval gate, but timed out reaching 192.168.56.102 before DHCP recovery.*
 ![Jenkins Build 1 Console Log](assets/03-jenkins-build-1-prod-ssh-timeout.png)
 
 ---
 
-### 4. Jenkins Build #2 — Aborted Build
+### 3. Jenkins Build #2 — Aborted Build
 *Build #2 was canceled during checkout while preparing the VM recovery.*
 ![Jenkins Build 2 Aborted](assets/04-jenkins-build-2-aborted.png)
 
 ---
 
-### 5. Jenkins Build #3 — 100% End-to-End Success!
+### 4. Jenkins Build #3 — 100% End-to-End Success!
 *Build #3 successfully executed all stages: Checkout, Build & Push (v3), Deploy to Staging, Approval Gate, and Deploy to Production!*
 ![Jenkins Build 3 Success](assets/05-jenkins-build-3-pipeline-success.png)
 
 ---
 
-### 6. Live Staging Web Application Verification
+### 5. Live Staging Web Application Verification
 *Live Jannat-e-Kashmir travel booking platform running at http://192.168.56.101:8085 after database schema fix.*
 ![Live Staging Verification](assets/06-staging-live-browser-verification.png)
 
