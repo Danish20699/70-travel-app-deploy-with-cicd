@@ -41,3 +41,4 @@ jobs:
           echo "Validating docker-compose.yml structure..."
           docker compose config --quiet 2>/dev/null || echo "Docker Compose validation requires docker compose CLI"
           echo "Validation complete!"
+
